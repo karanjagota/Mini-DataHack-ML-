@@ -24,7 +24,8 @@ ggplot(data=train,aes(x= as.factor(train$Type_of_Cab)))+
   geom_bar(stat = "count",aes(fill = as.factor(Surge_Pricing_Type)))+
   labs(x= "Type of Cab",y="Count",fill = "Surge Price Type",title="Type of cab Vs Surge Price Type")
 ```  
-# graph 1
+![rplot03](https://cloud.githubusercontent.com/assets/7979139/23835276/a5c4d2e8-0721-11e7-85da-ec4fb4f269e8.png)
+
 ```r
 # Printing Missing Values In Every Coloumn ...
 z<- sum(is.na(train)) #97143 missing values ... 
@@ -56,7 +57,7 @@ ggplot(data = train,aes(as.factor(train$Surge_Pricing_Type),train$Trip_Distance)
   labs(x= "Surge Pricing Type",y="Trip Distance")+
   stat_summary(fun.y = mean,geom = "point")
 ```
-# Graph2
+![rplot02](https://cloud.githubusercontent.com/assets/7979139/23835278/aea9dc78-0721-11e7-857a-0a1a04cb4764.png)
 
 ```r
 # Customer Rating Vs Type of Cab ... 
@@ -66,7 +67,7 @@ ggplot(data = train,aes(as.factor(train$Type_of_Cab),train$Customer_Rating))+
   stat_summary(fun.y = mean,geom = "point")+
   ggtitle("Avg Numer Of Customer Rating")
 ```
-# Graph3
+![rplot01](https://cloud.githubusercontent.com/assets/7979139/23835280/b33dfb16-0721-11e7-8e0a-5ab6b123359f.png)
 
 ```r
 # Customer Analysis
@@ -76,5 +77,7 @@ ggplot(data=train,aes(as.factor(train$Customer_Since_Months)))+
   facet_wrap(~train$Gender)+
   ggtitle("Customer Analysis")
   ```
-  #Graph4
+
+![rplot](https://cloud.githubusercontent.com/assets/7979139/23835282/b9e7a9f8-0721-11e7-9651-d27f315b1417.png)
+
 
