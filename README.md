@@ -1,2 +1,3 @@
-# Mini-DataHack-ML-
-ML Data Hack (EDA SCRIRPT)
+# Mini Data Hack ( ML ) 
+3 hour ML Data Hack (EDA SCRIPT)
+
